@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+}
+
+.navigation {
+     border: 1px solid rgb(81, 80, 80);
+     background-color: white;
+     box-shadow: 0 0 5px black;
+     display: flex;
+     justify-content: space-between;
+     padding: 15px;
+}
+
+.logo {
+    font-size: 18px;
+    color: black;
+    padding: 4px;
+}
+
+.logo-p {
+    font-size: 18px;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-span {
+    
+    font-size: 18px;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.logo:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.logo {
+    font-size: 20px;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.listNavigation {
+    display: flex;
+    list-style-type: none;
+    gap: 18px;
+    padding: 8px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: gray;
+    border-bottom: 1px solid black;
+}
+
+.listNavigation a:hover {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.HeroSection {
+    background-image: url('images/architect.jpg');
+    height: 500px;
+    
+}
+
+.HeroSection-Text {
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    margin: 10px 0;
+    padding-top: 300px;
+    color: white;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#br-hover {
+    background-color: rgba(0, 0, 0, 0.71);
+    
+}
