@@ -10,19 +10,48 @@ main {
 
 }
 
+
 .navigation {
      border: 1px solid rgb(81, 80, 80);
      background-color: white;
-     box-shadow: 0 0 5px black;
+     box-shadow: 0 0 5px rgb(64, 64, 64, 0.76);
      display: flex;
      justify-content: space-between;
-     padding: 15px;
+     padding: 8px 16px !important;
+     gap: 12px;
+     top: 0;
+     width: 100%;
+     z-index: 1;
+     position: fixed;
+     box-sizing: inherit;
+    
 }
 
+
+nav a {
+    float: right;
+    box-sizing: inherit;
+    display: block;
+    unicode-bidi: isolate;
+    letter-spacing: 6px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
 .logo {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+
     font-size: 18px;
     color: black;
-    padding: 4px;
+    
 }
 
 .logo-p {
@@ -43,7 +72,7 @@ main {
 
 }
 .logo:hover {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.401);
     cursor: pointer;
 }
 .logo {
@@ -61,11 +90,7 @@ main {
 
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    font-family: Arial, sans-serif;
-}
+
 
 nav a:hover {
     color: gray;
@@ -82,16 +107,19 @@ nav a:hover {
 
 .HeroSection {
     background-image: url('images/architect.jpg');
-    height: 500px;
-    
+    background-color: 0 0 5px rgb(64, 64, 64, 0.75);
+    display: flex;
+    height: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  
 }
 
 .HeroSection-Text {
     text-align: center;
     font-family: 'Segoe UI', Arial, sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    margin: 10px 0;
+     margin: 10px 0;
     padding-top: 300px;
     color: white;
     width: 100%;
@@ -100,7 +128,61 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-#br-hover {
-    background-color: rgba(0, 0, 0, 0.71);
-    
+
+.HeroSection span {
+    background-color: rgb(54, 35, 35);
+    font-size: 40px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.HeroSection p {
+    letter-spacing: 4px;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+
+
+.Projects-Grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.Project-Item {
+  padding: 8px;
+  width: 25%;
+  position: relative; 
+}
+
+.Project-Item img {
+  width: 100%;
+  display: block;
+}
+
+
+.House-Label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  font-size: 15px;
+}
+
+.Projects-Text p{
+    font-size: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .Project-Item {
+    width: 100%;
+  }
 }
